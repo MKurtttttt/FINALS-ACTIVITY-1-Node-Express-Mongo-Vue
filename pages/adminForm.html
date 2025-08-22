@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Form</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Form</h1>
+    <!-- Combined Admin Form and File Upload Form -->
+    <form action="/postadminForm" method="POST" enctype="multipart/form-data">
+      <label for="adminID">Admin ID</label>
+      <input type="text" id="adminID" name="adminID" required />
+      <br>
+
+      <label for="firstNameAdmin">First Name</label>
+      <input type="text" id="firstNameAdmin" name="firstName" required />
+      <br>
+
+      <label for="lastNameAdmin">Last Name</label>
+      <input type="text" id="lastNameAdmin" name="lastName" required />
+      <br>
+
+      <label for="department">Department</label>
+      <input type="text" id="department" name="department" required />
+      <br>
+
+      <label for="file">Select File</label>
+      <input type="file" id="file" name="file" required />
+      <br><br>
+
+      <button type="submit">Submit Admin</button>
+    </form>
+
+    <br>
+    <p><a href="/">Back to Home</a></p>
+  </div>
+</body>
+</html>
